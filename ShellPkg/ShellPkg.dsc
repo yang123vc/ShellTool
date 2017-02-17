@@ -201,7 +201,6 @@
     PlatformHookLib|MdeModulePkg/Library/BasePlatformHookLibNull/BasePlatformHookLibNull.inf
   }
 
-
   ShellPkg/Application/Lexyu_SataPMTest/SataPMTest.inf{
     <LibraryClasses>
     DebugLib|MdePkg/Library/BaseDebugLibSerialPort/BaseDebugLibSerialPort.inf
@@ -224,6 +223,13 @@
   }
 
   ShellPkg/Application/Lexyu_SataIndexdata/SataIndexdata.inf{
+    <LibraryClasses>
+    DebugLib|MdePkg/Library/BaseDebugLibSerialPort/BaseDebugLibSerialPort.inf
+    SerialPortLib|MdeModulePkg/Library/BaseSerialPortLib16550/BaseSerialPortLib16550.inf
+    PlatformHookLib|MdeModulePkg/Library/BasePlatformHookLibNull/BasePlatformHookLibNull.inf
+  }
+
+  ShellPkg/Application/Lexyu_SataCapability/SataCapability.inf{
     <LibraryClasses>
     DebugLib|MdePkg/Library/BaseDebugLibSerialPort/BaseDebugLibSerialPort.inf
     SerialPortLib|MdeModulePkg/Library/BaseSerialPortLib16550/BaseSerialPortLib16550.inf
